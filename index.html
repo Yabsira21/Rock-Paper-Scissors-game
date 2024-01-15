@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Rock, Paper, Scissors</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="modal hidden">
+      <div class="modal-heading">
+        <h1>Rules</h1>
+        <img class="close" src="images/icon-close.svg" alt="" />
+      </div>
+      <img src="images/image-rules.svg" alt="" />
+    </div>
+    <div class="overlay hidden"></div>
+    <main>
+      <div class="section--1">
+        <section class="header">
+          <div class="header--desc">
+            <h1>Rock</h1>
+            <h1>Paper</h1>
+            <h1>Scissors</h1>
+          </div>
+          <div class="header--score">
+            <p class="header--score--small">score</p>
+            <h1 class="header--score--main">0</h1>
+          </div>
+        </section>
+        <section class="game-1">
+          <div class="game_first-row">
+            <div class="game__paper">
+              <img src="images/icon-paper.svg" alt="" />
+            </div>
+            <div class="game__scissor">
+              <img src="images/icon-scissors.svg" alt="" />
+            </div>
+          </div>
+          <div class="game_last-row">
+            <div class="game__rock">
+              <img src="images/icon-rock.svg" alt="" />
+            </div>
+          </div>
+        </section>
+
+        <section class="game-2 hidden">
+          <div class="game--user--pick">
+            <p>You picked</p>
+            <div class="game__scissor">
+              <img src="images/icon-scissors.svg" alt="" />
+            </div>
+          </div>
+          <div class="game--cpu--loading">
+            <p>The house picked</p>
+            <div class="game--empty--circle"></div>
+          </div>
+        </section>
+
+        <section class="game-3 hidden">
+          <div class="game--user--pick">
+            <p>You picked</p>
+            <div class="game__scissor">
+              <img src="images/icon-scissors.svg" alt="" />
+            </div>
+          </div>
+          <div class="game--cpu--pick">
+            <p>The house picked</p>
+            <div class="game__scissor">
+              <img src="images/icon-scissors.svg" alt="" />
+            </div>
+          </div>
+        </section>
+
+        <section class="game-4 hidden">
+          <div class="game--user--pick">
+            <p>You picked</p>
+            <div class="game__scissor">
+              <img src="images/icon-scissors.svg" alt="" />
+            </div>
+          </div>
+          <div class="game--restart">
+            <h1 class="game--status">You Win</h1>
+            <button class="restart">play Again</button>
+          </div>
+          <div class="game--cpu--pick">
+            <p>The house picked</p>
+            <div class="game__scissor">
+              <img src="images/icon-scissors.svg" alt="" />
+            </div>
+          </div>
+        </section>
+      </div>
+      <button class="rules">Rules</button>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
